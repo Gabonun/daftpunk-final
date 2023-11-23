@@ -1,0 +1,460 @@
+/*---MEDIA QUERY---*/
+@media screen and (max-width: 1740px) {
+    .menu {
+        ul {
+            li {
+                a {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+/*Bajamos font-size y aumentamos un poco el main*/
+@media screen and (max-width: 1145px) {
+    .grid-container {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 100px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "nav header header" 
+        "nav main main"
+        "nav footer footer"
+        ;
+
+        .menu {
+            ul {
+                li {
+                    a {
+                        font-size: 40px;
+                    }
+                }
+            }        
+        }
+    }
+}
+
+/*lo dejamos para movil en 2 columnas*/
+@media screen and (max-width:950px) {
+    .grid-container {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 100px 200px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "header header" 
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+
+        .menu {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    .grid-container-galeria {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 100px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "nav header header" 
+        "nav main main"
+        "nav footer footer"
+        ;
+
+        .menu {
+            ul {
+                li {
+                    a {
+                        font-size: 40px;
+                    }
+                }
+            }        
+        }
+    }
+}
+
+
+/*GALERIA*/
+@media screen and (max-width:950px) {
+    .grid-container-galeria {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 100px 200px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "header header" 
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+
+        .menu_galeria {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 563px) {
+    header {
+        flex-direction: column;
+        nav {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .contenido-galeria {
+        .grid-galeria {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1.5fr);
+            grid-auto-rows: 250px;
+            gap: 5px;
+
+            .img-3 {
+                grid-row: span 1;
+            }
+            
+            .img-4 {
+                grid-column: span 1;
+            }
+            
+            .img-6 {
+                grid-column: span 1;
+            }
+        }
+    }
+}
+
+/*DISCOGRAFIA*/
+@media screen and (max-width:1863px) {
+    .contenido_disco {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+}
+
+@media screen and (max-width:802px) {
+    .grid-container-disco {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 100px 150px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "header header" 
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+
+        .menu_disco {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 563px) {
+    header {
+        flex-direction: column;
+        nav {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .contenido-disco {
+        .grid-disco {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1.5fr);
+            grid-auto-rows: 250px;
+            gap: 5px;
+        }
+    }
+}
+
+/*HISTORIA*/
+@media screen and (max-width:802px) {
+    .grid-container-historia {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 100px 150px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "header header" 
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+
+        .menu_historia {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:633px) {
+    .grid-container-historia {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 100px 150px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "header header" 
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+
+        .menu_historia {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .contenido_historia {
+            .primeros {
+                text-align: center;
+                margin-bottom: 50px;
+                background-color: $color-logo;
+                width: 100%;
+                
+                h2 {
+                    font-family: "Daft Font"; 
+                    font-size: 30px;
+                    color: $color-black;
+                }
+        
+                p {
+                    color: $color-black;
+                    font-size: 15px;
+                }
+
+                img {
+                    visibility: hidden;
+                }
+            }
+    
+            .homework {
+                text-align: center;
+                margin-bottom: 50px;
+                color: $color-blanco;
+    
+                h2 {
+                    font-family: "Daft Font"; 
+                    font-size: 30px;
+                    text-align: center;
+                    width: 100%;
+                }
+    
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 10px;
+                }
+
+                img {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+    
+            .discovery {
+                text-align: center;
+                margin-bottom: 50px;
+                background-color: $color-logo;
+                color: $color-black;
+                width: 100%;
+    
+                h2 {
+                    font-family: "Daft Font"; 
+                    font-size: 30px;
+                    text-align: center;
+                }
+    
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 10px;
+                }
+
+                img {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+    
+            .human {
+                text-align: center;
+                margin-bottom: 50px;
+                color: $color-blanco;
+            
+                h2 {
+                    font-family: "Daft Font"; 
+                    font-size: 30px;
+                    text-align: center;
+                    width: 100%;
+                }
+            
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 10px;
+                    color: $color-blanco;
+                }
+
+                img {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+    
+            .tron {
+                text-align: center;
+                margin-bottom: 50px;
+                width: 100%;
+                background-color: $color-logo;
+                color: $color-black;
+            
+                h2 {
+                    font-family: "Daft Font"; 
+                    font-size: 30px;
+                    text-align: center;
+                }
+                
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 10px;
+                }
+
+                img {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+    
+            .ram {
+                text-align: center;
+                margin-bottom: 50px;
+                width: 100%;
+                color: $color-black;
+    
+                h2 {
+                    font-family: "Daft Font"; 
+                    font-size: 30px;
+                    text-align: center;
+                    color: $color-blanco;
+                }
+    
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 10px;
+                    color: $color-blanco;
+                }
+
+                img {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+    
+            .separacion {
+                text-align: center;
+                margin-bottom: 50px;
+                width: 100%;
+                background-color: $color-menu;
+                color: $color-black;
+    
+                h2 {
+                    font-family: "Daft Font"; 
+                    font-size: 30px;
+                    text-align: center;
+                }
+    
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 10px;
+                }
+
+                img {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/*CONTACTO*/
+@media screen and (max-width:802px) {
+    .grid-container-contacto {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 100px 150px 600px 150px;
+        /**AREAS**/
+        grid-template-areas: 
+        "header header" 
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+
+        .menu_contacto {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
